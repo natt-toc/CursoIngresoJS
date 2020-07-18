@@ -6,20 +6,14 @@ function sumar()
 {
 	var numeroUno;
 	var numeroDos;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var sumaResultado;
 
-		numeroUno=document.getElementById("txtIdNumeroUno").value;
-		numeroUnoParseado=parseInt(numeroUno);
-
-		numeroDos=document.getElementById("txtIdNumeroDos").value;
-		numeroDosParseado=parseInt(numeroDos);
-
+		numeroUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+		numeroDos=parseInt(document.getElementById("txtIdNumeroDos").value);
+		
 	// suma
 	
-	sumaResultado= numeroUnoParseado + numeroDosParseado;
-
+	sumaResultado= numeroUno + numeroDos;
 
 	alert(sumaResultado);
 }

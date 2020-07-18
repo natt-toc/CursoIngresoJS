@@ -4,70 +4,54 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{		var numeroUno;
+{	var numeroUno;
 	var numeroDos;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var sumaResultado;
 
-		numeroUno=document.getElementById("txtIdNumeroUno").value;
-		numeroUnoParseado=parseInt(numeroUno);
+		numeroUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+		numeroDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 
-		numeroDos=document.getElementById("txtIdNumeroDos").value;
-		numeroDosParseado=parseInt(numeroDos);
-
-	sumaResultado=numeroUnoParseado + numeroDosParseado;
-	alert(sumaResultado);	
-}
+		sumaResultado=numeroUno + numeroDos;
+		alert("La suma es " +sumaResultado);	
+	}
 
 function restar()
 {	var numeroUno;
 	var numeroDos;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var restaResultado;
 
-		numeroUno=document.getElementById("txtIdNumeroUno").value;
-		numeroUnoParseado=parseInt(numeroUno);
+		numeroUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+		numeroDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 
-		numeroDos=document.getElementById("txtIdNumeroDos").value;
-		numeroDosParseado=parseInt(numeroDos);
-	
-	restaResultado=numeroUnoParseado - numeroDosParseado;	
-	alert(restaResultado);
+		restaResultado=numeroUno - numeroDos;
+		alert("La resta es " +restaResultado);
 }
 
 function multiplicar()
 { 	var numeroUno;
 	var numeroDos;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var multiplicacionResultado;
 
-		numeroUno=document.getElementById("txtIdNumeroUno").value;
-		numeroUnoParseado=parseInt(numeroUno);
+		numeroUno=parseInt(document.getElementById("txtIdNumeroUno").value);
+		numeroDos=parseInt(document.getElementById("txtIdNumeroDos").value);
 
-		numeroDos=document.getElementById("txtIdNumeroDos").value;
-		numeroDosParseado=parseInt(numeroDos);
-	
-		multiplicacionResultado= numeroUnoParseado * numeroDosParseado;
-		alert(multiplicacionResultado);
+		multiplicacionResultado=numeroUno * numeroDos;
+		
+		multiplicacionResultado= numeroUno * numeroDos;
+		alert("La multiplicación es " +multiplicacionResultado);
 }
 
 function dividir()
 {	var numeroUno;
 	var numeroDos;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var divisionResultado;
 
-		numeroUno=document.getElementById("txtIdNumeroUno").value;
-		numeroUnoParseado=parseInt(numeroUno);
+		numeroUno=parseFloat(document.getElementById("txtIdNumeroUno").value);
+		numeroDos=parseFloat(document.getElementById("txtIdNumeroDos").value);
 
-		numeroDos=document.getElementById("txtIdNumeroDos").value;
-		numeroDosParseado=parseInt(numeroDos);
+		divisionResultado=numeroUno + numeroDos;
 
-	divisionResultado=numeroUnoParseado / numeroDosParseado;	
-	alert (divisionResultado);
+		divisionResultado=numeroUno / numeroDos;	
+		alert ("La división es  " +divisionResultado.toFixed(2));
 }
 

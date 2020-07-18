@@ -9,7 +9,7 @@ function FahrenheitCentigrados ()
 {
     var temperaturaFahr;
     var FahaCentigrados;
-        temperaturaFahr=document.getElementById("txtIdTemperatura").value;
+        temperaturaFahr=parseInt(document.getElementById("txtIdTemperatura").value);
 
     //operacion a C°   
         FahaCentigrados= (temperaturaFahr - 32) * 5/9;
@@ -24,7 +24,7 @@ function CentigradosFahrenheit ()
     var temperaturaCent;
     var CentaFAhrenheit;
 
-        temperaturaCent=document.getElementById("txtIdTemperatura").value;
+        temperaturaCent=parseInt(document.getElementById("txtIdTemperatura").value);
 
     // operacion a F°
       CentaFAhrenheit= (temperaturaCent *9/5) + 32;  
