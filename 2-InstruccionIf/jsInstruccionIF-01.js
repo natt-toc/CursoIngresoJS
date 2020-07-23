@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var edad;
+	var edad=0;
 	var edadPars;
 
 		edad=document.getElementById("txtIdEdad").value;
