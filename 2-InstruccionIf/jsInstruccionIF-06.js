@@ -5,7 +5,7 @@ de edad (mas de 18 años) o adolescente (entre 13 y 17 años)
 {
 	var edad;
 
-	edad=document.getElementById("txtIdEdad").value;
+	edad=parseInt.document.getElementById("txtIdEdad").value;
 
 	if (edad >= 18) {
 		alert ("Ud. es mayor");
