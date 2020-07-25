@@ -12,10 +12,10 @@ function mostrar()
 		nota= parseInt(Math.round(Math.random() * (vMax - vMin) + vMin));
 		
 		if (nota >= 9)
-		 {
+		 { 
 			alert ( nota + " EXCELENTE");
 
-		} else if (nota >= 4 && nota < 9 ) 
+		} else if (nota >= 4 && nota < 9 )
 		{
 			 alert (nota + " APROBO");
 		} else {
