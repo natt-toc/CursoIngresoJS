@@ -3,22 +3,25 @@ function mostrar()
 destino informar si hace FRIO o CALOR en ese destino*/
 {
 	let destino;
+	let clima;
 
 	destino = document.getElementById("txtIdDestino").value;
 
 	switch (destino) {
 		case "Bariloche":
 		case "Cordoba":
-			alert("El clima en este destino es FRIO");
+			clima= "Frio";
 			break;
 
 		case "Cataratas":
-			alert("El clima en este destino es CALUROSO");
+			clima= "CALUROSO";
 			break;
 
 		case "Mar del plata":
-			alert("El clima en este destino es FRIO/CALUROSO");
+			clima = "FRIO/CALUROSO";
 			break;
-	}
+		}
+
+		alert("El clima en este destino es " + clima);
 
 }//FIN DE LA FUNCIÓN

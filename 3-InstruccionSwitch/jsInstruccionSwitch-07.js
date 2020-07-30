@@ -18,7 +18,7 @@ indicar el punto cardinal de nuestro pais en donde se encuentra Norte, Sur, Este
 			break;
 
 		case "Mar del plata":
-			alert("El destino se encuentra al Sudeste de la Prov. de Bs. As.");
+			alert("El destino se encuentra al Este");
 			break;
 	}
 
